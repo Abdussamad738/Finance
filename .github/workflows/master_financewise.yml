@@ -53,4 +53,4 @@ jobs:
           app-name: 'FinanceWise'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C4908414F3AB4A339E93401E2FD6B319 }}
-          package: .
+          package: ./client
