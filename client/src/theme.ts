@@ -10,13 +10,14 @@ export const tokens = {
       800: "#48494e",
       900: "#242427",
     },
+
     primary: {
       // light green
       100: "#d0fcf4",
       200: "#a0f9e9",
-      300: "#71f5de",
+      300: "#52997b",
       400: "#41f2d3",
-      500: "#12efc8",
+      500: "#748a3e",
       600: "#0ebfa0",
       700: "#0b8f78",
       800: "#076050",
@@ -45,6 +46,7 @@ export const tokens = {
     h4:{
       title:"#e5deaa",
     }
+    
   };
   
   // mui theme settings
@@ -53,7 +55,7 @@ export const tokens = {
       primary: {
         ...tokens.primary,
         main: tokens.primary[500],
-        light: tokens.primary[400],
+        light: tokens.primary[200],
       },
       secondary: {
         ...tokens.secondary,
