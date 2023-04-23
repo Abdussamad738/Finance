@@ -38,7 +38,6 @@ mongoose
   })
   .then(async () => {
     console.log(PORT);
-    console.log("This is from Server/index");
     app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
 
     /* ADD DATA ONE TIME ONLY OR AS NEEDED */
