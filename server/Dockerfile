@@ -21,7 +21,8 @@ RUN apt-get update -qq && \
     apt-get install -y python-is-python3 pkg-config build-essential 
 
 # Install node modules
-COPY --link package.json package-lock.json .
+
+COPY --link package.json package-lock.json /app/
 RUN npm install --production=false
 
 # Copy application code
@@ -38,4 +39,4 @@ FROM base
 COPY --from=build /app /app
 
 # Start the server by default, this can be overwritten at runtime
-CMD [ "npm", "run", "start" ]
+CMD [ "npm", "run"]
