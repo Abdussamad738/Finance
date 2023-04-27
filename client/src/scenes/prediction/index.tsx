@@ -56,8 +56,10 @@ const Predictions = () => {
         <Button
           onClick={() => setIsPredictions(!isPredictions)}
           sx={{
-            color: palette.grey[900],
-            backgroundColor: "#d7dae5",
+            color: "#744909",
+            fontWeight: 'bold',
+            textTransform:"none",
+            backgroundColor: "#e8e5bf",
             boxShadow: "0.1rem 0.1rem 0.1rem 0.1rem rgba(0,0,0,.4)",
           }}
           
