@@ -24,12 +24,13 @@ const Predictions = () => {
   const formattedData = useMemo(() => {
     if (!kpiData) return [];
     const monthData = kpiData[0].monthlyData;
-
+    
     const formatted: Array<DataPoint> = monthData.map(
-      ({ revenue }, i: number) => {
-        return [i, revenue];
-      }
+      ({ revenue }, i: number) => [i, parseFloat(String(revenue) )]
+      
+
     );
+    
     const regressionLine = regression.linear(formatted);
 
     return monthData.map(({ month, revenue }, i: number) => {
@@ -85,7 +86,7 @@ const Predictions = () => {
             tickFormatter={(v) => `$${v}`}
           >
             <Label
-              value="Revenue in USD"
+              value="Revenue in CAD"
               angle={-90}
               offset={-5}
               position="insideLeft"

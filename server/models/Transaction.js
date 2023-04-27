@@ -1,9 +1,9 @@
 import mongoose from "mongoose";
-import money from "money";
-// import { loadType } from "mongoose-currency";
+
+
 
 const Schema = mongoose.Schema;
-// loadType(mongoose);
+
 
 const TransactionSchema = new Schema(
   {

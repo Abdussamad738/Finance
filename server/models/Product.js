@@ -1,10 +1,7 @@
 import mongoose from "mongoose";
-import money from "money";
-// import { loadType } from "mongoose-currency";
-;
+
 const Schema = mongoose.Schema;
-// loadType(mongoose);
-console.log("his is from Product.js");
+
 const ProductSchema = new Schema(
   {
     price: {
