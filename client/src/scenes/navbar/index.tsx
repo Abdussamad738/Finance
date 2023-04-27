@@ -15,7 +15,7 @@ const Navbar = (props: Props) => {
       <FlexBetween gap="0.75rem">
         <CandlestickChartIcon sx={{ fontSize: "28px" }} />
         <Typography variant="h2" fontSize="22px">
-          Expense Wise
+          Finance Wise
         </Typography>
       </FlexBetween>
 
